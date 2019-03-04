@@ -1,0 +1,50 @@
+[
+  {
+    "model" : "iPhone 5",
+    "id" : "5",
+    "price" : 200,
+    "color" : "red",
+    "imgUrl" : "https://images.vexels.com/media/users/3/140597/isolated/preview/2a77944d2007f3fc767e376c4a4cd20f-iphone-5-front-by-vexels.png",
+    "description" : "смартфон корпорации Apple, представляет шестое поколение iPhone и является преемником iPhone 4S."
+  },
+  {
+    "model" : "iPhone 5s",
+    "id" : "5s1",
+    "price" : 300,
+    "color" : "yellow",
+    "imgUrl" : "https://cdn0.iconfinder.com/data/icons/iphonico/224/5S-black-512.png",
+    "description" : "смартфон корпорации Apple, представляет шестое поколение iPhone и является преемником iPhone 4S."
+  },
+  {
+    "model" : "iPhone 5c",
+    "id" : "5c",
+    "price" : 300,
+    "color" : "yellow",
+    "imgUrl" : "https://cdn0.iconfinder.com/data/icons/iphonico/224/g-5C-yellow-512.png",
+    "description" : "смартфон корпорации Apple, представляет шестое поколение iPhone и является преемником iPhone 4S."
+  },
+  {
+    "model" : "iPhone 4g",
+    "id" : "4g",
+    "price" : 300,
+    "color" : "yellow",
+    "imgUrl" : "https://cdn4.iconfinder.com/data/icons/iPhone_4G-png/512/iphone%204G%20shadow.png",
+    "description" : "смартфон корпорации Apple, представляет шестое поколение iPhone и является преемником iPhone 4S."
+  },
+  {
+    "model" : "iPhone 7",
+    "id" : "7",
+    "price" : 300,
+    "color" : "yellow",
+    "imgUrl" : "https://cdn3.iconfinder.com/data/icons/apple-iphone-7-watch-series-2/64/2_apple_iphone7_plus_rose_gold_mobile-512.png",
+    "description" : "смартфон корпорации Apple, представляет шестое поколение iPhone и является преемником iPhone 4S."
+  },
+  {
+    "model" : "iPhone X",
+    "id" : "X",
+    "price" : 300,
+    "color" : "yellow",
+    "imgUrl" : "https://cdn4.iconfinder.com/data/icons/apple-products-2026/512/iPhone_X_home-screen-512.png",
+    "description" : "смартфон корпорации Apple, представляет шестое поколение iPhone и является преемником iPhone 4S."
+  }
+]

@@ -1,0 +1,57 @@
+.registration-form {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid black;
+}
+img {
+  width: 20%;
+}
+input {
+  margin: 0.1vw;
+  border-color: #000000;
+}
+h1 {
+  margin-top: 0;
+}
+p {
+  color: #ffffff;
+  position: absolute;
+}
+.button-row {
+  margin-top: 1.6vw;
+}
+button {
+  border: none;
+  background-color: #c68313;
+  font-size: 2vw;
+  color: #ffffff;
+}
+button:disabled {
+  color: #000000;
+}
+.login-row {
+  margin-bottom: 1.5vw;
+}
+.check-login {
+  bottom: 82%;
+  right: 23%;
+}
+.check-pass {
+  top: 9%;
+  right: 10%;
+}
+.password-match-check {
+  top: 82%;
+  right: 2%;
+}
+.inputs-row {
+  position: relative;
+}
+h3 {
+  position: fixed;
+  color: #ffffff;
+  top: 90%;
+  left: 46%;
+}

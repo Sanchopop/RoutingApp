@@ -1,0 +1,33 @@
+.catalog {
+  height: 100%;
+}
+.phones-row {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+}
+.phone-info {
+  border: 3px solid black;
+  margin: 2vw;
+  width: 21%;
+}
+button {
+  border: none;
+  background-color: #c68313;
+  font-size: 2vw;
+  color: #ffffff;
+}
+h1 {
+  text-align: center;
+  border-bottom: 3px solid black;
+}
+img {
+  width: 100%;
+}
+h3 {
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  border-bottom: 3px solid black;
+}

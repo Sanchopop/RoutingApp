@@ -1,0 +1,15 @@
+.phone-info {
+  height: 100%;
+}
+.description {
+  display: flex;
+}
+button {
+  border: none;
+  background-color: #c68313;
+  font-size: 2vw;
+  color: #ffffff;
+}
+h3 {
+  margin: 0.2vw;
+}

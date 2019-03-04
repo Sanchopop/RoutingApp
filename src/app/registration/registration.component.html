@@ -1,0 +1,32 @@
+<div class= "registration-form" style="text-align:center">
+  <img src="src\assets\images\registration-form.png" alt="Registration Form Img">
+  <div class="login-password-row">
+    <h1 class="">Registration</h1>
+    <div class="inputs-row">
+      <p *ngIf="checkLogin()" class="check-login">
+        Wrong LOGIN!
+      </p>
+      <div class="login-row">
+        <input (keyup)="checkLogin()" type="text" placeholder=" Enter Your Login" [(ngModel)]="inputLogin">
+      </div>
+      <p *ngIf="checkPass()" class="check-pass">
+        Wrong PASSWORD!
+      </p>
+      <div>
+        <input (keyup)="checkPass()" type="password" placeholder=" Enter Your Password" [(ngModel)]="inputPass">
+      </div>
+      <div>
+        <input type="password" placeholder=" Enter Your Password Again" [(ngModel)]="inputCheckPass">
+      </div>
+      <p *ngIf="inputPass !== inputCheckPass" class="password-match-check">
+        Password does not match!
+      </p>
+    </div>
+    <div class="button-row">
+      <button (click)="addUser()" [disabled]="checkLogin() || checkPass() || inputPass !== inputCheckPass"><i class="fas fa-user-plus"></i>  SignUp</button>
+    </div>
+  </div>
+  <h3>© Popalex, Inc.</h3>
+</div>
+<ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '3px' }"></ngx-loading>
+

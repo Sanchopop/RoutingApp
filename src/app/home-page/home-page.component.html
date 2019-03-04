@@ -1,0 +1,18 @@
+<div class="catalog">
+  <div>
+    <button (click)="logout()"><i class="fas fa-power-off"></i> LogOut</button>
+  </div>
+  <div>
+    <h1><i class="fas fa-mouse-pointer"></i> Click On Phone To Show More Info <i class="fas fa-info-circle"></i></h1>
+  </div>
+  <div class="phones-row" *ngIf="arrPhones">
+    <a (click)="goToPage(phone.id)" *ngFor="let phone of arrPhones" class="phone-info">
+      <img [src]="phone.imgUrl" alt="Phone Img">
+      <div><i class="fas fa-mobile-alt"></i> {{phone['model']}}</div>
+      <div><i class="fas fa-dollar-sign"></i> {{phone['price']}}</div>
+    </a>
+  </div>
+  <h3>© Popalex, Inc.</h3>
+</div>
+
+
