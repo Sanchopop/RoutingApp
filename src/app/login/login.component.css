@@ -9,24 +9,35 @@ img {
   width: 20%;
 }
 input {
+  padding-left: 0.5vw;
   margin: 0.1vw;
   border-color: #000000;
+  width: 20vw;
+  height: 2vw;
+}
+input:disabled {
+  cursor: default;
 }
 p {
   color: #ffffff;
   position: absolute;
 }
 .check-login {
-  bottom: 67%;
-  right: 20%;
+  bottom: 80%;
+  right: 30%;;
 }
 .check-pass {
-  top: 65%;
-  right: 10%;
+  top: 83%;
+  right: 23%;
+  background-color: #c68313;
 }
 .check-user {
-  top: 65%;
-  right: 2%;
+  top: 83%;
+  right: 17%;
+}
+.check-users {
+  top: 83%;
+  right: 17%;
 }
 .inputs-row {
   position: relative;
@@ -39,9 +50,11 @@ button {
   background-color: #c68313;
   font-size: 2vw;
   color: #ffffff;
+  cursor: pointer;
 }
 button:disabled {
   color: #000000;
+  cursor: default;
 }
 h3 {
   position: fixed;

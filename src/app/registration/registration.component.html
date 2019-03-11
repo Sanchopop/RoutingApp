@@ -1,32 +1,32 @@
 <div class= "registration-form" style="text-align:center">
-  <img src="src\assets\images\registration-form.png" alt="Registration Form Img">
+  <img src="src\assets\images\registration-form.png" alt="Registration Form Img" title="Registration Form Img">
   <div class="login-password-row">
     <h1 class="">Registration</h1>
     <div class="inputs-row">
-      <p *ngIf="checkLogin()" class="check-login">
-        Wrong LOGIN!
+      <p *ngIf="isLoginCorrect" class="check-login">
+        Login must be more than 8 symbols!
       </p>
       <div class="login-row">
-        <input (keyup)="checkLogin()" type="text" placeholder=" Enter Your Login" [(ngModel)]="inputLogin">
+        <input (keyup)="checkLogin()" title="Enter Your Login" type="text" placeholder="Enter Your Login" [(ngModel)]="inputLogin">
       </div>
-      <p *ngIf="checkPass()" class="check-pass">
-        Wrong PASSWORD!
+      <p *ngIf="isPasswordCorrect" class="check-pass">
+        Password must be more than 6 symbols!
       </p>
       <div>
-        <input (keyup)="checkPass()" type="password" placeholder=" Enter Your Password" [(ngModel)]="inputPass">
+        <input (keyup)="checkPass()" title="Enter Your Password" type="password" placeholder="Enter Your Password" [(ngModel)]="inputPass">
       </div>
       <div>
-        <input type="password" placeholder=" Enter Your Password Again" [(ngModel)]="inputCheckPass">
+        <input title="Enter Your Password Again" type="password" placeholder="Enter Your Password Again" [(ngModel)]="inputCheckPass">
       </div>
       <p *ngIf="inputPass !== inputCheckPass" class="password-match-check">
         Password does not match!
       </p>
     </div>
     <div class="button-row">
-      <button (click)="addUser()" [disabled]="checkLogin() || checkPass() || inputPass !== inputCheckPass"><i class="fas fa-user-plus"></i>  SignUp</button>
+      <button (click)="addUser()" title="SignUp" [disabled]="isLoginCorrect || isPasswordCorrect || inputPass !== inputCheckPass || inputLogin < 1 || inputPass < 1"><i class="fas fa-user-plus"></i>  SignUp</button>
     </div>
   </div>
-  <h3>© Popalex, Inc.</h3>
+  <h3 title="One of the biggest corporation in the world">© Popalex, Inc.</h3>
 </div>
 <ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '3px' }"></ngx-loading>
 

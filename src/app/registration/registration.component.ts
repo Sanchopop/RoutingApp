@@ -16,12 +16,34 @@ export class RegistrationComponent implements OnInit {
   };
   loading = false;
   isUserCorrect = false;
+  isLoginCorrect = false;
+  isPasswordCorrect = false;
   constructor(private router: Router) {}
   checkLogin() {
-    return this.inputLogin.length < 8;
+    if (this.inputLogin.length < 1) {
+      this.isLoginCorrect = false;
+      this.isUserCorrect = false;
+    } else {
+      if (this.inputLogin.length < 8) {
+        this.isLoginCorrect = true;
+      } else {
+        this.isLoginCorrect = false;
+        this.isUserCorrect = false;
+      }
+    }
   }
   checkPass() {
-    return this.inputPass.length < 6;
+    if (this.inputPass.length < 1) {
+      this.isPasswordCorrect = false;
+      this.isUserCorrect = false;
+    } else {
+      if (this.inputPass.length < 6) {
+        this.isPasswordCorrect = true;
+      } else {
+        this.isPasswordCorrect = false;
+        this.isUserCorrect = false;
+      }
+    }
   }
   addUser() {
     this.loading = true;

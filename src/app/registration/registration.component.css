@@ -9,8 +9,11 @@ img {
   width: 20%;
 }
 input {
+  padding-left: 0.5vw;
   margin: 0.1vw;
   border-color: #000000;
+  width: 20vw;
+  height: 2vw;
 }
 h1 {
   margin-top: 0;
@@ -27,24 +30,29 @@ button {
   background-color: #c68313;
   font-size: 2vw;
   color: #ffffff;
+  cursor: pointer;
 }
 button:disabled {
   color: #000000;
+  cursor: default;
 }
 .login-row {
   margin-bottom: 1.5vw;
 }
 .check-login {
-  bottom: 82%;
-  right: 23%;
+  bottom: 87%;
+  right: 6%;
+  font-size: 1.2vw;
 }
 .check-pass {
-  top: 9%;
-  right: 10%;
+  top: 17%;
+  right: 2%;
+  font-size: 1.2vw;
 }
 .password-match-check {
-  top: 82%;
-  right: 2%;
+  top: 87%;
+  right: 20%;
+  font-size: 1.2vw;
 }
 .inputs-row {
   position: relative;

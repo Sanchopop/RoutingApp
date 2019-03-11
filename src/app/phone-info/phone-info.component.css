@@ -9,6 +9,7 @@ button {
   background-color: #c68313;
   font-size: 2vw;
   color: #ffffff;
+  cursor: pointer;
 }
 h3 {
   margin: 0.2vw;

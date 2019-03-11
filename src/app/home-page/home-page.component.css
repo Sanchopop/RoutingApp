@@ -17,6 +17,7 @@ button {
   background-color: #c68313;
   font-size: 2vw;
   color: #ffffff;
+  cursor: pointer;
 }
 h1 {
   text-align: center;
@@ -30,4 +31,7 @@ h3 {
   text-align: center;
   color: #ffffff;
   border-bottom: 3px solid black;
+}
+a {
+  cursor: pointer;
 }
