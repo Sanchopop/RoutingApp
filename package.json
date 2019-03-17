@@ -24,6 +24,7 @@
     "ngx-loading": "^2.0.1",
     "rxjs": "^6.4.0",
     "rxjs-compat": "^6.4.0",
+    "toastr": "^2.1.4",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {

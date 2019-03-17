@@ -19,6 +19,11 @@ button {
   color: #ffffff;
   cursor: pointer;
 }
+.more-phones-button {
+  display: flex;
+  justify-content: center;
+  font-size: 2vw;
+}
 h1 {
   text-align: center;
   border-bottom: 3px solid black;

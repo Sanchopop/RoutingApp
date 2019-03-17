@@ -6,11 +6,14 @@
     <h1><i class="fas fa-mouse-pointer"></i> Click On Phone To Show More Info <i class="fas fa-info-circle"></i></h1>
   </div>
   <div class="phones-row" *ngIf="arrPhones">
-    <a (click)="goToPage(phone.id)" *ngFor="let phone of arrPhones" class="phone-info" title="Click To Show More Info">
+    <a *ngFor="let phone of arrPhones" (click)="goToPage(phone['id'])" class="phone-info" title="Click To Show More Info">
       <img [src]="phone.imgUrl" alt="Phone Img">
       <div title="Phone Model"><i class="fas fa-mobile-alt"></i> {{phone['model']}}</div>
       <div title="Phone Price"><i class="fas fa-dollar-sign"></i> {{phone['price']}}</div>
     </a>
+  </div>
+  <div class="more-phones-button" *ngIf="arrCheck">
+    <button  (click)="showMorePhones()" title="Show More Phones">More Phones <i class="fas fa-sync-alt"></i></button>
   </div>
   <h3 title="One of the biggest corporation in the world">© Popalex, Inc.</h3>
 </div>
